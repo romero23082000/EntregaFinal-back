@@ -1,0 +1,51 @@
+###
+POST http://localhost:3977/api/v1/people/person HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Brissa",
+    "lastname": "Higuita",
+    "email": "Afromero69883@umanizales.edu.co",
+    "contact":{
+        "cellphone":3205217199,
+        "address":{
+            "city": "Manizales",
+            "code_zip":908999,
+            "geolocalization": [7236426, -2387355]
+        }
+    },
+    "proffession":{
+        "name":"TitanQ",
+        "organization":"Empresa",
+        "position_job":"Desarrollador junior"
+    }
+}
+###
+GET http://localhost:3977/api/v1/people/person HTTP/1.1
+###
+GET http://localhost:3977/api/v1/people/person/633faec7ef3d88aa3ff79be7 HTTP/1.1
+###
+PUT http://localhost:3977/api/v1/people/person/633faec7ef3d88aa3ff79be7 HTTP/1.1
+Content-Type: application/json
+
+{
+   "name": "Andres EDIT",
+    "lastname": "Romero",
+    "email": "Afromero69883@umanizales.edu.co",
+    "contact":{
+        "cellphone":3205217199,
+        "address":{
+            "city": "Manizales, EDIT",
+            "code_zip":908999,
+            "geolocalization": [7236426, -2387355]
+        }
+    },
+    "proffession":{
+        "name":"TitanQ, EDIT",
+        "organization":"Empresa",
+        "position_job":"Desarrollador junior"
+    }
+}
+
+###
+DELETE http://localhost:3977/api/v1/people/person/633faa8ff54615af3ef15f56 HTTP/1.1
